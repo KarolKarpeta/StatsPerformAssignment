@@ -1,0 +1,37 @@
+$tableBorder: 1px solid #ddd;
+$tableHeadersBackgroundColor: #4CAF50;
+$tableHoverBackgroundColor: #ddd;
+$thPadding: 12px;
+$trEvenBackgroundColor: #f2f2f2;
+
+h3 {
+    color: green;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+
+    tbody {
+        tr:nth-child(even) {
+            background-color: $trEvenBackgroundColor;
+        }
+
+        tr:hover {
+            background-color: $tableHoverBackgroundColor;
+        }
+
+        th {
+            padding-top: $thPadding;
+            padding-bottom: $thPadding;
+            background-color: $tableHeadersBackgroundColor;
+            color: white;
+            text-align: center;
+        }
+
+        td, th {
+            border: $tableBorder;
+            padding: 8px;
+        }
+    }
+}
